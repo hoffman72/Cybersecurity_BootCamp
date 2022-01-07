@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/Bradley_Olson_Azure_Network_w_ELK_Stack.jpg)
+(Ansible/Images/Bradley_Olson_Azure_Network_w_ELK_Stack.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Playbook files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -65,7 +65,7 @@ Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.jpg)
+(Ansible/Images/docker_ps_output.jpg)
 
 ### Target Machines & Beats
 
