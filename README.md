@@ -44,10 +44,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible | Allowed IP Addresses |
 |------------|---------------------|----------------------|
-| Jump Box   | No - SSH only       | 96.42.98.42          |
-| Web-1      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
-| Web-2      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
-| Web-3      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
+| Jump Box   | Yes                 | Host Computer        |
+| Web-1      | No                  | 10.0.0.4 96.42.98.42 |
+| Web-2      | No                  | 10.0.0.4 96.42.98.42 |
+| Web-3      | No                  | 10.0.0.4  |
 | ELK Server | Yes - Port 5601     | 10.0.0.4 96.42.98.42 |
 
 ### Elk Configuration
