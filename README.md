@@ -36,7 +36,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Elk Server machine can accept connections from the Internet (through Port 5601). Access to this machine is only allowed from the following IP addresses: 96.42.98.42
+Only the Elk Server machine can accept connections from the Internet (through Port 5601). Access to this machine is only allowed from the following IP addresses: Host Computer
 
 Machines within the network can only be accessed by the Jump Box (10.0.0.4).
 
@@ -57,11 +57,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 
 Use more memory command
-Install Docker
-Install python3
-Install the Docker python module
-Download and launch the ELK docker web container
-Enable docker service
+- Install Docker
+- Install python3
+- Install the Docker python module
+- Download and launch the ELK docker web container
+- Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
