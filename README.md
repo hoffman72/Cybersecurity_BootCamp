@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Ansible/Images/Bradley_Olson_Azure_Network_w_ELK_Stack.jpg)
+![Azure Network with Elk Stack](https://github.com/hoffman72/Cybersecurity_BootCamp/blob/main/Diagrams/Bradley_Olson_Azure_Network_w_ELK_Server.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Playbook files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -36,7 +36,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Elk Server machine can accept connections from the Internet (through Port 5601). Access to this machine is only allowed from the following IP addresses: 96.42.98.42
+Only the Elk Server machine can accept connections from the Internet (through Port 5601). Access to this machine is only allowed from the following IP addresses: Host Computer
 
 Machines within the network can only be accessed by the Jump Box (10.0.0.4).
 
@@ -44,11 +44,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible | Allowed IP Addresses |
 |------------|---------------------|----------------------|
-| Jump Box   | No - SSH only       | 96.42.98.42          |
-| Web-1      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
-| Web-2      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
-| Web-3      | Yes - Load Balancer | 10.0.0.4 96.42.98.42 |
-| ELK Server | Yes - Port 5601     | 10.0.0.4 96.42.98.42 |
+| Jump Box   | Yes - Port 22       | Host Computer        |
+| Web-1      | No                  | 40.122.130.56        |
+| Web-2      | No                  | 40.122.130.56        |
+| Web-3      | No                  | 40.122.130.56        |
+| ELK Server | Yes - Port 5601     | Host Computer        |
 
 ### Elk Configuration
 
@@ -56,16 +56,16 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-Use more memory command
-Install Docker
-Install python3
-Install the Docker python module
-Download and launch the ELK docker web container
-Enable docker service
+- Use more memory command
+- Install Docker
+- Install python3
+- Install the Docker python module
+- Download and launch the ELK docker web container
+- Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Ansible/Images/docker_ps_output.jpg)
+![Docker PS Output](https://github.com/hoffman72/Cybersecurity_BootCamp/blob/main/Ansible/Images/docker_ps_output.jpg)
 
 ### Target Machines & Beats
 
