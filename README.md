@@ -44,11 +44,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible | Allowed IP Addresses |
 |------------|---------------------|----------------------|
-| Jump Box   | Yes                 | Host Computer        |
-| Web-1      | No                  | 10.0.0.4 96.42.98.42 |
-| Web-2      | No                  | 10.0.0.4 96.42.98.42 |
-| Web-3      | No                  | 10.0.0.4  |
-| ELK Server | Yes - Port 5601     | 10.0.0.4 96.42.98.42 |
+| Jump Box   | Yes - Port 22       | Host Computer        |
+| Web-1      | No                  | 40.122.130.56        |
+| Web-2      | No                  | 40.122.130.56        |
+| Web-3      | No                  | 40.122.130.56        |
+| ELK Server | Yes - Port 5601     | Host Computer        |
 
 ### Elk Configuration
 
