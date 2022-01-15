@@ -65,7 +65,7 @@ Use more memory command
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Ansible/Images/docker_ps_output.jpg)
+![Docker PS Output](https://github.com/hoffman72/Cybersecurity_BootCamp/blob/main/Ansible/Images/docker_ps_output.jpg)
 
 ### Target Machines & Beats
 
